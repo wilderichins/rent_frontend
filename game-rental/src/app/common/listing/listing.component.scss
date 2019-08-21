@@ -1,0 +1,20 @@
+.game-listing{
+	display: flex;
+	background: #c4e4ef;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid gray;
+
+	.game-image img{
+		width: 100px;
+		padding-right: 25px;
+	}
+	.listing-body{
+		width: 100%;
+	}
+	.listing-header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
