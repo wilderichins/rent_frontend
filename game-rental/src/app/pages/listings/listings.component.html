@@ -1,4 +1,8 @@
-<game-listing></game-listing>
-<game-listing></game-listing>
-<game-listing></game-listing>
-<game-listing></game-listing>
+<div class="game-listing-page">
+	<div class="left-nav">
+		<input type="text" />
+	</div>
+	<div class="listing-body">
+		<game-listing *ngFor="let game of testListings" [listing]="game"></game-listing>
+	</div>
+</div>

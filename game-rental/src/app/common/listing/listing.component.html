@@ -5,10 +5,10 @@
 	<div class="listing-body">
 		<div class="listing-header">
 			<div class="listing-name">
-				Name Goes Here {{name}}
+				{{listing.name}}
 			</div>
 			<div class="listing-cost">
-				Cost goes Here{{cost}}
+				{{listing.cost | currency}}
 			</div>
 			<div class="listing-contact">
 				<a href="javascript:void(0)">Contact</a>
@@ -16,9 +16,8 @@
 		</div>
 		<div class="listing-details">
 			<div>
-				Listing details go here {{details}}
+				{{listing.details}}
 			</div>
-			
 		</div>
 	</div>
 </div>

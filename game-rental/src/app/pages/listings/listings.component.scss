@@ -1,3 +1,18 @@
+.game-listing-page{
+	display: flex;
+	justify-content: space-between;
+
+	.left-nav{
+		width: 25%;
+		padding: 20px;
+	}
+	.listing-body{
+		width:75%;
+		padding: 20px;
+	}
+}
 game-listing{
-	margin: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 100%;
 }

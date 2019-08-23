@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { gameListing } from '../../common/interfaces/gameListing';
 
 @Component({
   selector: 'game-listing',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listing.component.scss']
 })
 export class ListingComponent implements OnInit {
+
+	@Input()
+	listing: gameListing;
 
 	constructor() { }
 
