@@ -1,0 +1,12 @@
+<div class="game-listing-page">
+	<div class="left-nav">
+		<input #filterInput
+			type="text" 
+			placeholder="Search Game Listings" 
+			[value]="searchFilter" 
+			(keyup)="filterChanged(filterInput)" />
+	</div>
+	<div class="listing-body">
+		<game-listing *ngFor="let game of (listings$ | async)" [listing]="game"></game-listing>
+	</div>
+</div>
